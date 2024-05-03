@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="/styles/signup.css">
+</head>
+<body>
+<form action="/signupAction" method="post" onsubmit="return validateForm()">
+
+  <div class="container">
+		<div class="form signup">
+			<h2>Sign Up</h2>
+			<div class="inputBox">
+				<input type="text" id="username" name="username" required>
+				<span>username</span>
+			</div>
+			<div class="inputBox">
+				<input type="email" id="email" name="email" required>
+				<span>email address</span>
+			</div>
+			<div class="inputBox">
+				<input type="password" id="password" name="password" required>
+				<span>create password</span>
+			</div>
+			<div class="inputBox">
+				<input type="password" id="confirm_password" name="confirm_password" required>
+				<span>confirm password</span>
+			</div>
+			<div class="inputBox">
+				<input type="submit" value="Signup">
+			</div>
+			<p>Already a member ? <a href="/login" class="login">Log in</a></p>
+		</div>
+
+	</div>
+</form>
+
+</body>
+<script src="../jsvalidation/validation.js"></script>
+</html>
